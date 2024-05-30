@@ -1,15 +1,15 @@
-# """The music_db.py is the main database file that holds the music artefacts data.
-# The file is used to create the database table structure, insert data into the table,
-# fetch data from the table, and display the data in a tabular format using the pandas module.
-# The file also contains methods to add, edit, and delete music artefacts in the database."""
-# """The files uses a number of module libraries and classes to create a music database.
-# These moduels inclues the sqlite3, datetime, hashlib, pandas, and time modules.
-# The classes used in the files are the Login class, AccountDB class, and MusicArtefactDB class.
-# The Login class is used to log in to the system using the username and password.
-# The AccountDB class is used to create the database connection and store the user's data.
-# The MusicArtefactDB class is used to create the database table structure, insert data into the table,
-# fetch data from the table, and display the data in a tabular format using the pandas module.
-# The class also contains methods to add, edit, and delete music artefacts in the database."""
+"""The music_db.py is the main database file that holds the music artefacts data.
+The file is used to create the database table structure, insert data into the table, fetch data from the table, and
+display the data in a tabular format using the pandas module. The file also contains methods to add, edit, and delete
+music artefacts in the database."""
+"""The files uses a number of module libraries and classes to create a music database. 
+These moduels inclues the sqlite3, datetime, hashlib, pandas, and time modules.
+The classes used in the files are the Login class, AccountDB class, and MusicArtefactDB class.
+The Login class is used to log in to the system using the username and password.
+The AccountDB class is used to create the database connection and store the user's data.
+The MusicArtefactDB class is used to create the database table structure, insert data into the table,
+fetch data from the table, and display the data in a tabular format using the pandas module.
+The class also contains methods to add, edit, and delete music artefacts in the database."""
 import sqlite3
 import datetime
 import hashlib
@@ -102,7 +102,7 @@ class MusicArtefactDB:
         musicLyrics = self.music_txt_file("song-file.txt")
 
         time.sleep(0.5)
-        print(f"Music Score has been uploaded:")
+        print("Music Score has been uploaded:")
         musicScore = self.music_txt_file("song-file-music-score.txt")
 
         time.sleep(0.5)
@@ -180,7 +180,7 @@ class MusicArtefactDB:
                 date_str = datetime.datetime(year, month, day).strftime("%Y-%m-%d")
                 new_value = f"{date_str} {time_now}"
 
-            """Update the entry in the database with the new value"""
+            """Update the entry in the database with the new value, // NOTE: potential SQL injection vulnerability // """
             update_sql = f"""
             UPDATE music_artefact_db 
             SET {column_to_update} = ? 
@@ -209,7 +209,7 @@ class MusicArtefactDB:
         """This function is used to delete music artefacts in the database"""
         if user.isAdmin:
             musicID = input("Enter the musicID row number to delete: ")
-            delete_sql = f"""
+            delete_sql = """
             DELETE FROM music_artefact_db
             WHERE musicID = ?
             """

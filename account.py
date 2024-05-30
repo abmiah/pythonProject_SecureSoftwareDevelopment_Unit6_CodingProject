@@ -1,8 +1,8 @@
-# """This script is used to create a database connection and insert data into the database table.
-# The data is then fetched and printed to the console. The connection is then closed."""
-# """The following modules are imported. SQLite3 is used to create a database connection and manage the database.
-# The datetime module is used to store the date of birth of the employees.
-# The hashlib module is used to hash the password using the sha256 algorithm."""
+"""This script is used to create a database connection and insert data into the database table. The data is then fetched
+and printed to the console. The connection is then closed."""
+"""The following modules are imported. SQLite3 is used to create a database connection and manage the database. 
+The datetime module is used to store the date of birth of the employees. The hashlib module is used to hash the 
+password using the sha256 algorithm."""
 import sqlite3
 import datetime
 import hashlib
@@ -67,9 +67,9 @@ if __name__ == "__main__":
     """Data to be inserted into the database table, these are preexisting employees"""
     data_to_insert = [
         ('papa.brown', 'Papa', 'Brown', datetime.date(1933, 5, 3).isoformat(), 'papa.brown@copyrightmusic.com', db.password_hash("james@brown1933"), 0),
-        ('tania.turner', 'Tania', 'Turner', datetime.date(1939, 11, 26).isoformat(), 'tania.tuner@copyrightmusic.com', db.password_hash("tina@turner1939"), 1),
-        ('admin', 'Amrol', 'Miah', datetime.datetime.now(), 'test.test@copyrightmusic.com', db.password_hash("admin"), 1),
-        ('user', 'Amrol2', 'Miah2', datetime.datetime.now(), 'test2.test2@copyrightmusic.com', db.password_hash("user"), 0)
+        ('tania.turner', 'Tania', 'Turner', datetime.date(1939, 11, 26).isoformat(), 'tania.tuner@copyrightmusic.com', db.password_hash("tina@turner1939"), 0),
+        ('admin', 'Dr Stelios', 'Sotiriadis', datetime.datetime.now(), 'test.test@copyrightmusic.com', db.password_hash("admin"), 1),
+        ('user', 'Amrol', 'Miah', datetime.datetime.now(), 'test2.test2@copyrightmusic.com', db.password_hash("user"), 1)
     ]
 
     db.insert_data(data_to_insert)

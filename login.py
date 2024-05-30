@@ -1,6 +1,5 @@
-# """Importing the AccountDB class from the account.py file, this file hold the database
-# connection and users data"""
-# """Importing the hashlib module to hash / encrypt the password using the sha256 algorithm"""
+"""Importing the AccountDB class from the account.py file, this file hold the database connection and users data"""
+"""Importing the hashlib module to hash / encrypt the password using the sha256 algorithm"""
 from account import AccountDB
 import hashlib
 

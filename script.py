@@ -1,8 +1,7 @@
-# """The script.py file is the main file that runs the program. It is used to interact with the user and
-# call the methods from the other classes. The script.py file imports the Login class from the login.py file
-# and the MusicArtefactDB class from the music_db.py file. The script.py file contains the main code
-# that interacts with the user, such as logging in, displaying options, and calling the appropriate
-# methods based on the user's input."""
+"""The script.py file is the main file that runs the program. It is used to interact with the user and call the methods
+from the other classes. The script.py file imports the Login class from the login.py file and the MusicArtefactDB class
+from the music_db.py file. The script.py file contains the main code that interacts with the user, such as logging in,
+displaying options, and calling the appropriate methods based on the user's input."""
 """The script file uses similar modules and classes as the account.py and login.py files.
 The script file interacts with the user by displaying options and calling the appropriate methods
 based on the user's input. The script file imports the Login class from the login.py file and the
