@@ -45,7 +45,7 @@ Except for **SQLite3**, the file uses two other modules: **datetime** to gather 
 
 This meticulously designed document houses the **Login** class, which plays a pivotal role in user authentication. It is crafted to validate user credentials and manage user information, including first and last names and admin status, ensuring robust security measures. 
 
-The **login.py** interacts with the **Accou
+The **login.py** interacts with the **AccountDB** class, created in the **account.py** file, to perform various operations related to user login; the file also uses **hashlib** to ensure the password is encrypted when the program prints it back to the user for verification. 
 
 #### **2.4.	music_db.py**
 
