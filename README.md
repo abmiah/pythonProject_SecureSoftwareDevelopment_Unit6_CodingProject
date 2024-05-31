@@ -20,7 +20,7 @@ To develop this program, extensive and thorough research was conducted to explor
 
 **GitHub repository:** https://github.com/abmiah/pythonProject_SecureSoftwareDevelopment_Unit6_CodingProject
 
-**Video sample:** https://www.youtube.com/watch?v=cx2kVOf0bjU
+**Video sample:** https://www.youtube.com/watch?v=oRM02-aKKZM
 
 #### **2.	Coding Evaluation**
 
