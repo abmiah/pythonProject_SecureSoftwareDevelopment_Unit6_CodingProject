@@ -1,7 +1,6 @@
-# Secure Software Development – Unit 6 | Development Individual Project: Coding Output
+# Development Individual Project: Coding Output | Secure Software Development – Unit 6
 
 #### **Dr Stelios Sotiriadis** 
-Secure Software Development 
  
 University of Essex (Online) | Computing Department  
 10th June 2024
