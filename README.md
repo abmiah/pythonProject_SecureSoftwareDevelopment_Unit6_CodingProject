@@ -93,7 +93,7 @@ The second implemented security tool is **flake8**. Analogous to **Bandit**, thi
 
 
 ![Figure 3.2.3: Analysing music_db.py file, it was observed that numerous lines exceeded the 79-character limit E501.](https://abmiah.github.io/eportfolio/images/articles_imgs/development-Ind-project-coding-output/flake8-music_all.jpg)
-**Figure 3.2.3:** Analysing **music_db.py** file, it was observed that numerous lines exceeded the 79-character limit E501. Additionally, trailing whitespaces were identified in W291(Flake8rules, n.d.).
+**Figure 3.2.3:** Analysing **music_db.py** file, it was observed that numerous lines exceeded the 79-character limit E501. Additionally, trailing whitespaces were identified in W291 (Flake8rules, n.d.).
 
 
 ![Figure 3.2.4: The analysis of the script.py file also revealed a consistent styling issue, characterised by lines that exceed the specified character limit.](https://abmiah.github.io/eportfolio/images/articles_imgs/development-Ind-project-coding-output/flake8-script.jpg)
